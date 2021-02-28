@@ -17,7 +17,7 @@ var loginFunctionModel = {
     farmerLoginModel : function(id,callback){
         console.log('In farmer login model',id);
 
-        return db.query('Select * from farmer_login where username=?',[id],callback);
+        return db.query('Select * from farmerdetails where mobile_number=?',[id],callback);
     },
 
 
