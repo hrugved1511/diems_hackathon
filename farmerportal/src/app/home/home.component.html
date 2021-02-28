@@ -1,29 +1,32 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
-     <a class="navbar-brand" href="#">DIGIFARM</a>
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
-     </button>
-   
-     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 1000px;">
-       <ul class="navbar-nav mr-auto">
-         <li class="nav-item active">
-           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-         </li>
-         <li class="nav-item">
-             <a class="nav-link" href="#">Products</a>
+    <!---Start navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar fixed-top  navbar-dark" style="background-color:#208f0a"> 
+      <a class="navbar-brand" routerLink=''>
+        <h4 class="navTitle" style="color: white;">Farmer's Kart</h4> 
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+       <div class="collapse navbar-collapse" id="navbarText" style="cursor:pointer;">
+         <ul class="navbar-nav ml-auto">
+             <li class="nav-item active">
+               <a class="nav-link" routerLink=''>Home </a>
+             </li>
+           <li class="nav-item">
+             <a class="nav-link" routerLink=''>Land Contract</a>
            </li>
-         <li class="nav-item">
-           <a class="nav-link" href="#">Place Demand</a>
-         </li>
-         <li class="nav-item">
-             <a class="nav-link" href="#">Land Contract</a>
-         </li>
-         
- 
-       </ul>
-      
+           <li class="nav-item">
+             <a class="nav-link" routerLink=''>Industry Availabilities</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" routerLink=''>HouseHold Availabilities</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" routerLink='/login'>SignIn/SignUp</a>
+          </li>
+         </ul>
      </div>
    </nav>
+   <!--- End Navigation Bar -->
      <!--- Start LandPage -->
      <div>
              <img class="d-block w-100 img-fluid img-slider" src="../../assets/home.png" alt="First slide">
@@ -33,4 +36,3 @@
      </div>
      
      <!--- End of LandPage -->
-<button (click)="login()">Login</button>
