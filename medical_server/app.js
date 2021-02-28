@@ -11,6 +11,7 @@ var loginRoute = require('./routes/login.routes');
 var sendsmsRoute = require('./routes/sendsms.routes');
 var sendEmailRoute = require('./routes/mailer.route');
 var registerRoute = require('./routes/register');
+var countRoute = require('./routes/totaluser.routes');
 var app = express();
 
 // view engine setup
@@ -30,6 +31,7 @@ app.use('/login',loginRoute);
 app.use('/sendsms',sendsmsRoute);
 app.use('/sendemail',sendEmailRoute);
 app.use('/register',registerRoute);
+app.use('/count',countRoute)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
