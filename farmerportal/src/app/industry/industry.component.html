@@ -1,0 +1,78 @@
+    <!---Start navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar fixed-top  navbar-dark" style="background-color:#208f0a"> 
+        <a class="navbar-brand" routerLink=''>
+          <h4 class="navTitle" style="color: white;">Farmer's Kart</h4> 
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+        </button>
+         <div class="collapse navbar-collapse" id="navbarText" style="cursor:pointer;">
+           <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                 <a class="nav-link" routerLink='/'>Home </a>
+               </li>
+             <li class="nav-item">
+               <a class="nav-link" routerLink='/landcontract'>Land Contract</a>
+             </li>
+             <li class="nav-item  active">
+               <a class="nav-link" routerLink='/industry'>Industry</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" routerLink=''>HouseHold</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" routerLink='/login'>Login</a>
+            </li>
+           </ul>
+       </div>
+     </nav>
+     <!--- End Navigation Bar -->
+
+     <div class="row" style="margin-top: 8%;">
+         <div class="col-lg-10">
+         </div>
+         <div class="col-lg-2">
+            <div >
+                <button type="button" class="btn" style="background-color: #208f0a; 
+                font-family: Georgia, 'Times New Roman', Times, serif;font-weight: bold; color: white;" (click)="addItems()">Add&nbsp;+</button>
+             </div>
+         </div>
+     </div>
+
+    <!-- Table Starts-->
+    <div>
+        <table class="table" style="margin-top: 3%;">
+            <thead>
+            <tr>
+                <th scope="col">Item Name</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Estimated Delivery Date</th>
+                <th scope="col">Estimated Delivery Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td><a><button  type="button" class="btn btn-outline-danger decline btn-sm">Update</button></a>
+                <a ><button  type="button" class="btn btn-outline-success approve btn-sm" style="margin-left: 10px;">Delete</button></a></td>
+            </tr>
+            <tr>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td><a ><button  type="button" class="btn btn-outline-danger decline btn-sm">Update</button></a>
+                    <a ><button  type="button" class="btn btn-outline-success approve btn-sm" style="margin-left: 10px;">Delete</button></a></td>
+            </tr>
+            <tr>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td><a ><button  type="button" class="btn btn-outline-danger decline btn-sm">Update</button></a>
+                    <a ><button  type="button" class="btn btn-outline-success approve btn-sm" style="margin-left: 10px;">Delete</button></a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Tabke Ends -->

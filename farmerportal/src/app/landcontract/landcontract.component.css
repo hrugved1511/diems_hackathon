@@ -1,0 +1,40 @@
+.navTitle{
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: bold;
+font-size: 28px;
+text-decoration: underline;
+text-align: center;
+margin: 15px;
+}
+
+.card-header{
+font-family: 'Times New Roman', Times, serif;
+font-weight: bold;
+font-size: large;
+text-align: center;
+}
+.card-title{
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+letter-spacing: 1px;
+text-align: center;
+}
+.card-text{
+font-family: 'Times New Roman', Times, serif;
+font-size: 15px;
+text-align: center;
+cursor: pointer;
+font-weight: bold;
+letter-spacing: 1px;
+}
+.col-sm-12{
+    padding-top: 15%;
+}
+.ButtonViewAll{
+    text-align: center;
+    color: white;
+    background: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    }

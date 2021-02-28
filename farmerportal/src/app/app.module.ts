@@ -7,12 +7,22 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LandcontractComponent } from './landcontract/landcontract.component';
+import { LandrentingComponent } from './landrenting/landrenting.component';
+import { LandfarmingComponent } from './landfarming/landfarming.component';
+import { IndustryComponent } from './industry/industry.component';
+import { IndustryFromComponent } from './industry-from/industry-from.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    LandcontractComponent,
+    LandrentingComponent,
+    LandfarmingComponent,
+    IndustryComponent,
+    IndustryFromComponent
   ],
   imports: [
     BrowserModule,
