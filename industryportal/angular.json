@@ -30,9 +30,11 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": ["./node_modules/jquery/dist/jquery.min.js",
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/popper.js/dist/popper.js",
-              "./node_modules/bootstrap/dist/js/bootstrap.min.js"]
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -126,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "industryportal"
+  "defaultProject": "industryportal",
+  "cli": {
+    "analytics": "a1f30325-f0ba-40e2-83f0-7dc3412f2f75"
+  }
 }
