@@ -13,12 +13,7 @@ const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
-  {path:'landcontract', component:LandcontractComponent},
-  {path:'landrenting', component:LandrentingComponent},
-  {path:'landfarming',component:LandfarmingComponent},
-  {path:'industry', component:IndustryComponent},
-  {path:'industryform', component:IndustryFromComponent},
-  {path:'',redirectTo:'/home',pathMatch:'full'}
+  {path:'',redirectTo:'/login',pathMatch:'full'}
 ];
 
 @NgModule({

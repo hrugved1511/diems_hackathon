@@ -4,20 +4,20 @@ var loginFunctionModel = {
     customerLoginModel : function(id,callback){
         console.log('In customer login model',id);
 
-        return db.query('Select * from customer_login where username=?',[id],callback);
+        return db.query('Select * from customerdetails where mobile_number=?',[id],callback);
 
     },
 
     industryLoginModel : function(id,callback){
         console.log('In industry login model',id);
 
-        return db.query('Select * from industry_login where username=?',[id],callback);
+        return db.query('Select * from industrydetails where industry_name=?',[id],callback);
     },
 
     farmerLoginModel : function(id,callback){
         console.log('In farmer login model',id);
 
-        return db.query('Select * from farmer_login where username=?',[id],callback);
+        return db.query('Select * from farmerdetails where mobile_number=?',[id],callback);
     },
 
 

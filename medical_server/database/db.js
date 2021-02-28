@@ -2,10 +2,10 @@ const mysql = require('mysql');
 
 var connection = mysql.createConnection({
     //properties..
-    host: 'database-1.cclk3daa4sqy.us-east-1.rds.amazonaws.com',
+    host: 'localhost',
     user: 'root',
-    password: 'rootroot',
-    database: 'medical' 
+    password: 'root',
+    database: 'diemshackthon' 
 });
 
 connection.connect(function(error) {
@@ -35,7 +35,7 @@ var connection = mysql.createPool({
     hostname: 'localhost',
     user: 'root',
     password: 'root',
-    database: 'sih'
+    database: 'diemshackthon'
 });
 
 module.exports = connection;
