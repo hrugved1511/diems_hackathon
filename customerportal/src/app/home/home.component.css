@@ -1,3 +1,24 @@
-body{
-    background-color:linear-gradient(to bottom, #ccff66 0%, #99ff33 100%);;
+.navTitle{
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: bold;
+font-size: 28px;
+text-decoration: underline;
+text-align: center;
+margin: 15px;
+}
+.card-text{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: medium;
+}
+.card-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+}
+.btn_text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: medium;
+    color: white;
 }

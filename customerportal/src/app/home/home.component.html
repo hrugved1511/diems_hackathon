@@ -1,38 +1,253 @@
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
-<body>
- 
-<div class="container">
-  <h2>Card Image</h2>
-  <p>Image at the top (card-img-top):</p>
-  <div class="card" style="width:400px">
-    <img class="card-img-top" src="../../assets/login.jpg" alt="Card image" style="width:100%">
-    <div class="card-body">
-      <h4 class="card-title">John Doe</h4>
-      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-      <a href="#" class="btn btn-primary">See Profile</a>
-    </div>
-  </div>
-  <br>
-  
-  <p>Image at the bottom (card-img-bottom):</p>
-  <div class="card" style="width:400px">
-    <div class="card-body">
-      <h4 class="card-title">Jane Doe</h4>
-      <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
-      <a href="#" class="btn btn-primary">See Profile</a>
-    </div>
-    <img class="card-img-bottom" src="img_avatar6.png" alt="Card image" style="width:100%">
-  </div>
-</div>
+    <!---Start navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar fixed-top  navbar-dark" style="background-color:#208f0a"> 
+      <a class="navbar-brand" routerLink='/home'>
+        <h4 class="navTitle" style="color: white;">Farmer's Kart</h4> 
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+       <div class="collapse navbar-collapse" id="navbarText" style="cursor:pointer;">
+         <ul class="navbar-nav ml-auto">
+             <li class="nav-item active">
+               <a class="nav-link" routerLink='/home'>Home </a>
+             </li>
+           <li class="nav-item">
+             <a class="nav-link" routerLink='/login'>Login</a>
+          </li>
+         </ul>
+     </div>
+   </nav>
+   <!--- End Navigation Bar -->
 
-</body>
-</html>
+   <div class="row" style="margin-top: 10%;">
+    <div class="col-lg-3 col-sm-12">
+      <div class="card" >
+        <img class="card-img-top" src="../../assets/masoor.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Masoor Dal</h5>
+          <p class="card-text"><b>Price: Rs.80/Kg</b></p>
+          <p class="card-text"><b>Farmer's Name: ABC XYZ</b></p>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 60%;" (click)="decrement()">-</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;">{{quantity}}</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;" (click)="increment()">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-12">
+      <div class="card" >
+        <img class="card-img-top" src="../../assets/masoor.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Masoor Dal</h5>
+          <p class="card-text"><b>Price: Rs.80/Kg</b></p>
+          <p class="card-text"><b>Farmer's Name: ABC XYZ</b></p>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 60%;" (click)="decrement()">-</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;">{{quantity}}</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;" (click)="increment()">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-12">
+      <div class="card" >
+        <img class="card-img-top" src="../../assets/masoor.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Masoor Dal</h5>
+          <p class="card-text"><b>Price: Rs.80/Kg</b></p>
+          <p class="card-text"><b>Farmer's Name: ABC XYZ</b></p>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 60%;" (click)="decrement()">-</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;">{{quantity}}</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;" (click)="increment()">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-12">
+      <div class="card" >
+        <img class="card-img-top" src="../../assets/masoor.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Masoor Dal</h5>
+          <p class="card-text"><b>Price: Rs.80/Kg</b></p>
+          <p class="card-text"><b>Farmer's Name: ABC XYZ</b></p>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 60%;" (click)="decrement()">-</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;">{{quantity}}</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;" (click)="increment()">+</button>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <div class="row" style="margin-top: 4%;">
+    <div class="col-lg-3 col-sm-12">
+      <div class="card" >
+        <img class="card-img-top" src="../../assets/masoor.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Masoor Dal</h5>
+          <p class="card-text"><b>Price: Rs.80/Kg</b></p>
+          <p class="card-text"><b>Farmer's Name: ABC XYZ</b></p>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 60%;" (click)="decrement()">-</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;">{{quantity}}</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;" (click)="increment()">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-12">
+      <div class="card" >
+        <img class="card-img-top" src="../../assets/masoor.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Masoor Dal</h5>
+          <p class="card-text"><b>Price: Rs.80/Kg</b></p>
+          <p class="card-text"><b>Farmer's Name: ABC XYZ</b></p>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 60%;" (click)="decrement()">-</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;">{{quantity}}</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;" (click)="increment()">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-12">
+      <div class="card" >
+        <img class="card-img-top" src="../../assets/masoor.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Masoor Dal</h5>
+          <p class="card-text"><b>Price: Rs.80/Kg</b></p>
+          <p class="card-text"><b>Farmer's Name: ABC XYZ</b></p>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 60%;" (click)="decrement()">-</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;">{{quantity}}</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;" (click)="increment()">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-12">
+      <div class="card" >
+        <img class="card-img-top" src="../../assets/masoor.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Masoor Dal</h5>
+          <p class="card-text"><b>Price: Rs.80/Kg</b></p>
+          <p class="card-text"><b>Farmer's Name: ABC XYZ</b></p>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 60%;" (click)="decrement()">-</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;">{{quantity}}</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;" (click)="increment()">+</button>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <div class="row" style="margin-top: 4%;">
+    <div class="col-lg-3 col-sm-12">
+      <div class="card" >
+        <img class="card-img-top" src="../../assets/masoor.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Masoor Dal</h5>
+          <p class="card-text"><b>Price: Rs.80/Kg</b></p>
+          <p class="card-text"><b>Farmer's Name: ABC XYZ</b></p>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 60%;" (click)="decrement()">-</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;">{{quantity}}</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;" (click)="increment()">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-12">
+      <div class="card" >
+        <img class="card-img-top" src="../../assets/masoor.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Masoor Dal</h5>
+          <p class="card-text"><b>Price: Rs.80/Kg</b></p>
+          <p class="card-text"><b>Farmer's Name: ABC XYZ</b></p>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 60%;" (click)="decrement()">-</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;">{{quantity}}</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;" (click)="increment()">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-12">
+      <div class="card" >
+        <img class="card-img-top" src="../../assets/masoor.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Masoor Dal</h5>
+          <p class="card-text"><b>Price: Rs.80/Kg</b></p>
+          <p class="card-text"><b>Farmer's Name: ABC XYZ</b></p>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 60%;" (click)="decrement()">-</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;">{{quantity}}</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;" (click)="increment()">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-12">
+      <div class="card" >
+        <img class="card-img-top" src="../../assets/masoor.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Masoor Dal</h5>
+          <p class="card-text"><b>Price: Rs.80/Kg</b></p>
+          <p class="card-text"><b>Farmer's Name: ABC XYZ</b></p>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 60%;" (click)="decrement()">-</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;">{{quantity}}</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;" (click)="increment()">+</button>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <div class="row" style="margin-top: 4%;">
+    <div class="col-lg-3 col-sm-12">
+      <div class="card" >
+        <img class="card-img-top" src="../../assets/masoor.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Masoor Dal</h5>
+          <p class="card-text"><b>Price: Rs.80/Kg</b></p>
+          <p class="card-text"><b>Farmer's Name: ABC XYZ</b></p>
+<button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 60%;" (click)="decrement()">-</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;">{{quantity}}</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;" (click)="increment()">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-12">
+      <div class="card" >
+        <img class="card-img-top" src="../../assets/masoor.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Masoor Dal</h5>
+          <p class="card-text"><b>Price: Rs.80/Kg</b></p>
+          <p class="card-text"><b>Farmer's Name: ABC XYZ</b></p>
+<button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 60%;" (click)="decrement()">-</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;">{{quantity}}</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;" (click)="increment()">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-12">
+      <div class="card" >
+        <img class="card-img-top" src="../../assets/masoor.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Masoor Dal</h5>
+          <p class="card-text"><b>Price: Rs.80/Kg</b></p>
+          <p class="card-text"><b>Farmer's Name: ABC XYZ</b></p>
+<button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 60%;" (click)="decrement()">-</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;">{{quantity}}</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;" (click)="increment()">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-12">
+      <div class="card" >
+        <img class="card-img-top" src="../../assets/masoor.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Masoor Dal</h5>
+          <p class="card-text"><b>Price: Rs.80/Kg</b></p>
+          <p class="card-text"><b>Farmer's Name: ABC XYZ</b></p>
+<button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 60%;" (click)="decrement()">-</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;">{{quantity}}</button>
+          <button class="btn btn-lg btn_text btn_text" style="background-color: #208f0a; margin-left: 1%;" (click)="increment()">+</button>
+        </div>
+      </div>
+    </div>
+   </div>
+   

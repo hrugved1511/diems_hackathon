@@ -13,6 +13,7 @@ import { LandfarmingComponent } from './landfarming/landfarming.component';
 import { IndustryComponent } from './industry/industry.component';
 import { IndustryFromComponent } from './industry-from/industry-from.component';
 import { HttpClientModule} from '@angular/common/http';
+import { HouseholdComponent } from './household/household.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { HttpClientModule} from '@angular/common/http';
     LandrentingComponent,
     LandfarmingComponent,
     IndustryComponent,
-    IndustryFromComponent
+    IndustryFromComponent,
+    HouseholdComponent
   ],
   imports: [
     BrowserModule,
